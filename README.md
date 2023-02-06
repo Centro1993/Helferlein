@@ -13,7 +13,7 @@ Usage: helferlein <arg> "<prompt>"
 Before you run Helferlein, set your API-Token by running "export OPENAI_API_KEY=<TOKEN>"
 Create a Token at https://platform.openai.com/account/api-keys
 
-Usage Example:
+## Usage Example
 ```
 helferlein c "Read current CPU Usage"
 top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1"%"}'
@@ -32,3 +32,6 @@ y
 Output:
 0%
 ```
+
+## WARNING
+This is a stupid Idea, and you should not be using it. Don't blame ChatGPT, OpenAI or me if you wreck your Stuff ;)
